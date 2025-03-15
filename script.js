@@ -21,3 +21,23 @@ document.getElementById("mButton").onclick = function(){
 document.getElementById("red").onclick = function(){
     document.getElementById("red").style.display = "none"
 }
+
+
+function appendImage(imagePath){
+    const container = document.getElementById("myButton");
+
+    const img = document.createElement("img")
+
+    img.src = imagePath;
+
+    container.appendChild(img)
+}
+
+const button = document.getElementById('#myButton');
+
+button.addEventListener("click", () => {
+    appendImage('Assets/carPark.jpg')
+  
+})
+
+
