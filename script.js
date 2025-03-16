@@ -42,7 +42,7 @@ const guestCount = document.querySelectorAll(".guests")
 guestCount.forEach((guests) => {
 
 const subtractBtn = document.querySelector(".subtract");
-const addtBtn = document.querySelector(".add");
+const addBtn = document.querySelector(".add");
 const reservationValue = document.querySelector(".reservationValue");
 
 //initialize a variable to store the count
@@ -62,7 +62,7 @@ subtractBtn.addEventListener("click", () => {
     }
 })
 
-addtBtn.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
         count++;
         updateValue()
         console.log(count)
