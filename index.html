@@ -28,25 +28,42 @@
         <h1>A NOSTALGIC STAY</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </article>
-        <form action="youtube.com" id="bookings">
+        <form action="https://youtube.com" id="bookings">
             <h3>Reservation</h3>
             <div id="datePicker">
                 <h4>Choose Date</h4>
                 <p>SEPT 22 - 0CT 23</p>
             </div>
-            <div class="Guests">
+            <div class="guests">
                 <h4>Adult</h4>
                 <div id="buttonflex">
-                <button type="button">-</button>
-                <div id="guestAmount"><p>1</p></div>
-                <button type="button">+</button></div>
+                <button 
+                type="button" 
+                class="subtract">-</button>
+                <input 
+                type="text" 
+                class="reservationValue" 
+                value="0" 
+                min="1"
+                readonly />
+                <button 
+                type="button" 
+                class="add">+</button></div>
             </div>
-            <div class="Guests">
+            <div class="guests">
                 <h4>Children</h4>
                 <div id="buttonflex">
-                <button type="button">-</button>
-                <div id="guestAmount"><p>1</p></div>
-                <button type="button">+</button></div>
+                <button  
+                type="button"
+                class="subtract">-</button>
+                <input 
+                type="text"
+                class="reservationValue"
+                min="1" 
+                value="0" readonly />
+                <button 
+                type="button" 
+                class="add">+</button></div>
             </div>
             <button>CHECK AVAILABILITY</button>
 
