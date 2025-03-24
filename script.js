@@ -69,3 +69,10 @@ addBtn.addEventListener("click", () => {
    
 })
 })
+
+const faq = document.querySelector('#faq')
+const faqBtn = document.querySelector('getFaq')
+
+faqBtn.addEventListener("click",() =>{
+    faq.style.display ='contents'
+})
